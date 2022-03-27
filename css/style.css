@@ -1,0 +1,244 @@
+/*common css start */
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #8e8e8e;
+}
+
+.header-before{
+	position: relative;
+}
+.header-before::before{
+	content:""; 
+    background: #333333; 
+    position: absolute; 
+    top: 0; 
+    left: 50%; 
+    height: 50px; 
+    width: 2px;
+}
+.h2{
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #333333;
+}
+.h3{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+
+}
+.p{
+	padding-top: 15px;
+}
+
+.c_button{
+	width: 200px;
+	height: 50px;
+	background-color: #fff;
+	border: 1px solid #333333;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+.c_button i{
+	margin-left: 20px;
+}
+.c_button:hover{
+	background-color: #8e8e8e;
+}
+/* common css end */
+
+
+/* header css start */
+
+header{
+	padding: 30px 0;
+	border-bottom: 1px solid;
+}
+.logo{}
+.logo h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+.menu ul li a{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #8e8e8e;
+	margin-left: 30px;
+	transition: 0.3s;
+}
+.menu ul li a:hover{
+	color: #333333;
+}
+.search{}
+.search-dropdown{}
+.search-icon{
+	color: #8e8e8e;
+}
+
+.search-dropdown::after {
+    display: none;
+}
+
+.search-dropdown:focus {
+    box-shadow: none;
+}
+
+.search-dropdownmenu {
+    min-width: 400px;
+    padding: 15px 15px;
+    margin: 0;
+    border-radius: 0;
+}
+
+.search-dropdownmenu[data-bs-popper] {
+    top: 85px;
+    left: -370px;
+    margin-top: 0;
+}
+
+.search-box{
+	width: 100%;
+    height: 45px;
+    border: 1px solid #333333;
+    border-radius: 0;
+    font-family: 'Lato', sans-serif;
+}
+.search-box:focus{
+	box-shadow: none;
+}
+.search-button{
+	width: 100%;
+    height: 45px;
+    background: transparent;
+    border: 1px solid #333333;
+}
+/* header css end */
+
+/* slider section css start */
+.slider{
+	background-image: url('../images/slider.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.slide-inner{
+	margin: 210px 0;
+}
+.slide-inner h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+	color: #fff;
+}
+.slide-inner p{
+	margin: 50px 0;
+	color: #fff;
+}
+.slide-inner button{
+	border: none;
+}
+
+/* .slide-inner button i{
+	margin-left: 20px;
+} */
+
+.prev-button, .next-button{
+	color: #8e8e8e;
+	border-color: transparent;
+	background-color: transparent !important;
+}
+
+.next-prev-separatorg{
+	font-size: 16px;
+	color: #8e8e8e;
+}
+
+.next-prev-separatorb{
+	font-size: 18px;
+	color: #333333;
+}
+/* slider section css end
+
+/* welcome section css start */
+.welcome{
+	padding: 80px 0 100px 0;	
+}
+
+.welcome-inner{}
+.welcome-inner h2{}
+.welcome-inner p{
+	margin-bottom: 100px;
+}
+
+.feature-inner{
+	padding: 60px 10px 30px 10px;
+	border: 1px solid #8e8e8e;
+	position: relative;
+	transition: 0.3s;
+}
+.feature-inner::before{
+	content: "";
+    position: absolute; 
+    top: 0; 
+    left: 50%;
+    height: 20px; 
+    width: 2px;
+    background-color: red;
+}
+.feature-inner:hover{
+	border: 1px solid #333;
+}
+.feature-inner .c_button{
+	border: none;
+}
+/* welcome section css end */
+
+/* about-us section css start */
+.about-us{
+	margin-bottom: 130px;
+}
+.about-img{}
+.about-img img{
+	padding-right: 65px;
+}
+.about-text{}
+.about-text h2{}
+.about-text p{
+	margin-bottom: 40px;
+}
+.about-text .section-button{
+	margin-top: 40px;
+}
+/* about-us section css end */
+
+/* recent-work section css start */
+.recent-work{
+	padding: 80px 0 100px 0;
+	background-color: #f8f8f8;
+}
+.recent-work-inner{
+	margin-bottom: 100px;
+}
+.portfolio-tab{}
+.portfolio-tab .nav-item{}
+.portfolio-tab .nav-link{
+	margin-right: 5px;
+	border-radius: 0;
+	color: #8e8e8e;
+	text-transform: uppercase;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+	color: #333333;
+    background-color: transparent;
+    border: 1px solid black;
+}
+/* recent-work section css end */
