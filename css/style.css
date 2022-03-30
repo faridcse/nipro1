@@ -5,49 +5,54 @@ body{
 	color: #8e8e8e;
 }
 
-.header-before{
-	position: relative;
-}
-.header-before::before{
-	content:""; 
-    background: #333333; 
-    position: absolute; 
-    top: 0; 
-    left: 50%; 
-    height: 50px; 
-    width: 2px;
-}
-.h2{
+.c_h2{
 	font-family: 'Lato', sans-serif;
 	font-size: 30px;
 	text-transform: uppercase;
 	color: #333333;
 }
-.h3{
+.c_h3{
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	text-transform: uppercase;
 
 }
-.p{
-	padding-top: 15px;
+.c_p{
+	color: #8e8e8e;
 }
 
 .c_button{
 	width: 200px;
-	height: 50px;
-	background-color: #fff;
-	border: 1px solid #333333;
-	font-weight: 700;
-	text-transform: uppercase;
-	transition: 0.3s;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    border: 1px solid #333333;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
 }
 .c_button i{
 	margin-left: 20px;
 }
 .c_button:hover{
-	background-color: #8e8e8e;
+	color: #8e8e8e;
+}
+
+.mb-40{
+	margin-bottom: 40px;
+}
+.mb-45{
+	margin-bottom: 45px;
+}
+.mb-100{
+	margin-bottom: 100px;
+}
+.mb-125{
+	margin-bottom: 125px;
 }
 /* common css end */
 
@@ -166,41 +171,62 @@ header{
 	font-size: 18px;
 	color: #333333;
 }
-/* slider section css end
+/* slider section css end*/
 
-/* welcome section css start */
-.welcome{
-	padding: 80px 0 100px 0;	
+/* service section css start */
+.service{
+	padding-bottom: 100px;
+}
+.c_title{}
+.c_style{
+	width: 2px;
+    height: 50px;
+    background-color: #333333;
+    display: inline-block;
+    margin-bottom: 30px;
 }
 
-.welcome-inner{}
-.welcome-inner h2{}
-.welcome-inner p{
-	margin-bottom: 100px;
-}
 
-.feature-inner{
-	padding: 60px 10px 30px 10px;
+.service_inner{
+	padding: 0 15px 40px;
 	border: 1px solid #8e8e8e;
-	position: relative;
-	transition: 0.3s;
 }
-.feature-inner::before{
-	content: "";
-    position: absolute; 
-    top: 0; 
-    left: 50%;
-    height: 20px; 
-    width: 2px;
-    background-color: red;
+
+.service_inner:hover{
+	border: 1px solid #333333;
 }
-.feature-inner:hover{
-	border: 1px solid #333;
+.service_inner:hover .hover-effect{
+	color: #333333;
 }
-.feature-inner .c_button{
+.service_inner h3{
+	color: #333333;
+}
+.service_inner hr{
+	margin: 20px auto;
+	width: 50px;
+	height: 2px;
+	color: #8e8e8e;
+}
+.service_inner p{}
+.service_inner a{
 	border: none;
+	color: #8e8e8e;
 }
-/* welcome section css end */
+.service_inner a:hover{
+	color: #333333;
+}
+
+.service_icon{
+	margin: -21px auto 40px;
+    width: 70px;
+    background-color: #fff;
+}
+.service_icon i{
+	font-size: 60px;
+}
+/* service section css end */
+
+
 
 /* about-us section css start */
 .about-us{
@@ -222,7 +248,7 @@ header{
 
 /* recent-work section css start */
 .recent-work{
-	padding: 80px 0 100px 0;
+	padding-bottom: 100px;
 	background-color: #f8f8f8;
 }
 .recent-work-inner{
@@ -240,5 +266,144 @@ header{
 	color: #333333;
     background-color: transparent;
     border: 1px solid black;
+    margin-bottom: 40px;
 }
-/* recent-work section css end */
+/* recent-work section css end*/
+
+ /* why-choose-nipro section css start */
+.why-choose-nipro{
+	padding-bottom: 100px;
+}
+.why-choose-inner{
+	width: 350px;
+	margin-bottom: 40px;
+    border-bottom: 1px solid #8e8e8e;
+}
+.why-choose-inner:hover {
+	border-bottom: 1px solid #333333;
+}
+.why-choose-inner:hover .hover-effect{
+	color: #333333;
+}
+.why-choose-inner h3{
+	margin: 5px 0 45px 0;
+}
+
+.why-choose-inner p{
+	margin-bottom: 40px;
+}
+ .why-choose-icon{}
+ .why-choose-icon i{
+ 	font-size: 48px;
+ 	color: #8e8e8e;
+ }
+ /* why-choose-nipro section css end */
+
+ /* who-work-with-us section css start */
+ .who-work-with-us{
+ 	background-image: url('../images/bg-who-work-with-us.jpg');
+ 	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-bottom: 100px;
+ }
+ .work-with-us-single{
+ 	background-color: #fff;
+ 	position: relative;
+ 	transition: 0.1s !important;
+ }
+ .work-with-us-single:hover .who-work-social-icon{
+	opacity: 1;
+ }
+
+ .work-with-us-text{
+ 	padding: 15px 0 15px 40px;
+ }
+
+ .who-work-social-icon{
+ 	position: absolute;
+ 	left: 5px;
+ 	top: 50%;
+ 	transform: translate(-50%,-50%);
+ 	opacity: 0;
+ 	transition: 0.3s;
+ }
+ .who-work-social-icon ul{
+ 	
+ }
+ .who-work-social-icon ul li{}
+ .who-work-social-icon ul li a{
+ 	color: #8e8e8e;
+    font-size: 26px;
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-right: 2px solid transparent;
+    transition: 0.3s;
+ }
+ .who-work-social-icon ul li a:hover{
+ 	color: #333333;
+ 	background-color: #f8f8f8;
+ 	border-right: 2px solid #333333;
+
+ }
+ /* who-work-with-us section css end */
+
+ /* best-pricing section css start */
+ .best-pricing{
+ 	padding-bottom: 100px;
+ }
+ /* best-pricing section css end */
+
+ /* footer section css start */
+ footer{
+ 	background-image: url('../images/bg-footer.jpg');
+ 	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+ }
+
+ .f_p{
+ 	color: #fff;
+ }
+
+ .footer-social-icon ul li a{
+ 	font-size: 26px;
+ 	color: #fff;
+ 	width: 50px;
+ 	height: 50px;
+ 	line-height: 50px;
+ 	display: inline-block;
+ 	border: 1px solid #fff;
+ 	transition: 0.3s;
+ }
+ .footer-social-icon ul li a:hover{
+ 	background-color: #fff;
+ 	color: #333333;
+ }
+
+ .footer-divider{
+ 	height: 2px;
+ 	color: #fff;
+ }
+
+.footer-left{}
+.footer-left p{
+	color: #fff;
+}
+
+ .footer-right ul li a{
+ 	text-decoration: none;
+ 	color: #fff;
+ 	margin-left: 40px;
+ }
+ .footer-right ul li a:hover{
+ 	color: #8e8e8e;
+ }
+ .f_bottom{
+ 	padding: 40px 0;
+ }
+ /* footer section css end */
